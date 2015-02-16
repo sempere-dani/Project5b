@@ -17,7 +17,6 @@
         android:layout_height="wrap_content"
         android:id="@+id/progressBar"
 
-
         style="@android:style/Widget.ProgressBar.Large"
         android:layout_above="@+id/textView"
         android:layout_centerHorizontal="true" />

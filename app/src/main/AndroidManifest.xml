@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.dani.project5b" >
 
+    <!--Añadimos permisos para el uso de la camara-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -10,8 +13,9 @@
         <activity
             android:name=".Logo_Activity"
             android:label="@string/app_name"
-            android:theme="@android:style/Theme.NoTitleBar">
-            <!-- Cambiamos el intent para que inicialice primero la clase Logo-->
+            android:theme="@android:style/Theme.NoTitleBar" >
+
+            <!-- Cambiamos el intent para que inicialice primero la clase Logo -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -25,6 +29,18 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name=".Like"
+            android:label="@string/title_activity_like" >
+        </activity>
+        <activity
+            android:name=".Formulario"
+            android:label="@string/title_activity_formulario" >
+        </activity>
+        <activity
+            android:name=".DataBaseHelper"
+            android:label="@string/title_activity_data_base_helper" >
         </activity>
     </application>
 

@@ -2,7 +2,6 @@ package com.example.dani.project5b;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -27,6 +26,7 @@ public class MainActivity extends Activity {
 
         final ImageButton ib = (ImageButton) findViewById(R.id.imageSet);
         final ImageButton ib2 = (ImageButton) findViewById(R.id.imagePower);
+        final ImageButton ib3 = (ImageButton) findViewById(R.id.imageBad);
 
 
         ib.setOnClickListener(new View.OnClickListener() {
@@ -48,11 +48,66 @@ public class MainActivity extends Activity {
             }
         });
 
-        final SharedPreferences pref = getSharedPreferences("toggleButton", MODE_PRIVATE);
-        //tb.setChecked(pref.getBoolean("toggleButton",true));
-        audioOn = pref.getBoolean("audio", true);
+        ib3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent third = new Intent(
+                        MainActivity.this,
+                        Like.class
 
-    }
+                );
+                startActivity(third);
+            }
+        });
+
+     /*  SharedPreferences pref = getSharedPreferences("toggleButton", MODE_PRIVATE);
+        //tb.setChecked(pref.getBoolean("toggleButton",true));
+        audioOn = pref.getBoolean("toggleButton", true);
+
+        //Capturamos el servicio para manejar Sonidos
+        mAudioManager = (AudioManager) getSystemService(AUDIO_SERVICE);
+
+
+        //Cargamos la cancion
+        mPlayer = MediaPlayer.create(this, R.raw.trompeta);
+
+        //Esperaremos a que este cargada
+        mPlayer.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+            @Override
+            public void onPrepared(MediaPlayer mp) {
+                Log.d("AUDIO", "Cargada la cancion");
+
+            }
+        });
+        // Suena la cancion
+
+
+                mPlayer.setLooping(true);
+                if(audioOn=true){
+
+
+
+                    mPlayer.setVolume((float) mVolume / mVolumeMax,
+                            (float) mVolume / mVolumeMax);
+
+
+                    mPlayer.start();
+                    ;
+
+                }else {
+
+
+                    mPlayer.setVolume((float) mVolume / mVolumeMax,
+                            (float) mVolume / mVolumeMax);
+                    mPlayer.pause();
+
+                }*/
+            }
+
+
+
+
+
 
 
 

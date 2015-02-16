@@ -43,6 +43,7 @@ public class Settings extends Activity {
                           SharedPreferences.Editor editor = getSharedPreferences("toggleButton", MODE_PRIVATE).edit();
                           // SharedPreferences.Editor editor = shPref.edit();
                             editor.putBoolean("toggleButton",tb.isChecked());
+
                             editor.commit();
 
 
@@ -50,6 +51,8 @@ public class Settings extends Activity {
                 }
 
                 );
+
+
 
 /*AUDIO*/
 

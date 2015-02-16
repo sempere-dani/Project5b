@@ -24,9 +24,9 @@
             <ImageButton
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/imageShare"
+                android:id="@+id/imageBad"
 
-                android:src="@drawable/ic_action_share"/>
+                android:src="@drawable/ic_action_good"/>
         </TableRow>
         <TableRow
             android:layout_weight="1">
@@ -41,7 +41,7 @@
                 android:layout_height="match_parent"
                 android:id="@+id/imageGood"
                 android:background="@color/SpringGreen"
-                android:src="@drawable/ic_action_good"
+                android:src="@drawable/ic_action_bad"
                 />
         </TableRow>
 

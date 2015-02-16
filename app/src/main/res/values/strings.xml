@@ -8,4 +8,15 @@
     <string name="title_activity_main">MainActivity</string>
     <string name="Loading">Loading</string>
     <string name="Sonido">Sonido</string>
+    <string name="title_activity_like">Like</string>
+    <string name="title_activity_formulario">Formulario</string>
+    <string name="title_activity_data_base_helper">DataBaseHelper</string>
+    <string name="nuevoLenguaje">Nuevo Lenguaje</string>
+    <string name="label_id">id</string>
+    <string name="nombreLenguaje">Lenguaje</string>
+    <string name="guardar">guardar</string>
+    <string name="cancelar">cancelar</string>
+    <string name="nueva">nueva</string>
+    <string name="ver">ver</string>
+    <string name="descripcion">descripcion</string>
 </resources>
