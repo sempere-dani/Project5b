@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="true"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="74dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/_id" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/nombre" />
+
+    <!--Elemento view permite ocupar el espacio entre el nombre y el icono
+    <View android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton1"
+        android:src="@drawable/ic_action_edit"
+        android:onClick="editHandler"/>
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton2"
+        android:src="@drawable/ic_accessibility_black_24dp"
+        android:onClick="viewHandler"/>-->
+
+
+</LinearLayout>
